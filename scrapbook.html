@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/page2.css">
+    <title>Cards & Album</title>
+</head>
+<body>
+    <header>
+        <h1>ScrapBook</h1>
+    </header>
+    <main class="product-container">
+        <div class="product">
+            <img src="images/album1.jpg" alt="Jewelry">
+            <h2>Memory Album</h2>
+            <span class = "fw-bold d-block"><b>45.50 Rs</b></span>
+            <button onclick="customize('jewelry')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/album2.jpg" alt="Frames">
+            <h2>Memory Album</h2>
+            <span class = "fw-bold d-block"><b>45.50 Rs</b></span>
+            <button onclick="customize('jewelry')">Add to Cart</button>
+        </div>
+        
+        <!-- Repeat similar product listings for cards, decorative items, cups, t-shirts, etc. -->
+    </main>
+    <div id="customization-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Customize Your Product</h2>
+            <!-- Customization options go here -->
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <script src="js/page2.js"></script>
+</body>
+</html>
